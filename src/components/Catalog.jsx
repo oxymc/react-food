@@ -1,6 +1,8 @@
 import { CategoryCard } from "./CategoryCard";
+import { NoResults } from "./NoResults";
 
 const Catalog = ({catalog = []}) => {
+  if(catalog.length) {
     return (
       <div className="catalog">
         {
@@ -13,5 +15,9 @@ const Catalog = ({catalog = []}) => {
       </div>
     );
   }
+  else {
+    return <NoResults />
+  }
+}
   
-  export {Catalog};
+export {Catalog};
