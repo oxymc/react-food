@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="col l6 s12">
             <h5 className="white-text"><NavLink to="/" className="grey-text text-lighten-4">Reciepes</NavLink></h5>
             <p className="grey-text text-lighten-4">
-              Project was used React Routers and hooks
+              Project was based on React Routers and hooks
             </p>
           </div>
           <div className="col l4 offset-l2 s12">
