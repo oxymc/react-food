@@ -15,24 +15,25 @@ const SingleRecipe = () => {
       }
     )
   }, [id])
+
   return (
     <>
     <div className="row product">
       {
-        !meal ? <Loader /> : (
+        !meal || Object.keys(meal).length === 0 ? <Loader /> : (
           <>
             <div className='info'>
               <div className="col s12 m6 image">
                 <img className="responsive-img" src={meal.strMealThumb} alt={meal.strMeal} />
               </div>
               <div className="col s12 m6 desc">
-                <h1>{meal.strMeal}</h1>
-                <h4>{meal.strTags ? meal.strTags : null}</h4>
+                <h1 className='flow-text'>{meal.strMeal}</h1>
+                <h4 className='flow-text'>{meal.strTags ? meal.strTags : null}</h4>
                 <small>{meal.strArea}</small>
               </div>
             </div>
             <div className="col s12 instruction">
-              <h4>Recipe</h4>
+              <h4 className='flow-text'>Recipe</h4>
               {meal.strInstructions ? <p>{meal.strInstructions}</p> : null}
               <table className="responsive-table">
                 <thead>
@@ -63,7 +64,7 @@ const SingleRecipe = () => {
               </table>
               {meal.strYoutube ? 
                 <>
-                  <h4>Video</h4>
+                  <h4 className='flow-text'>Video</h4>
                   <iframe 
                     title={meal.strMeal}
                     allowFullScreen

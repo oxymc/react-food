@@ -19,6 +19,9 @@
     background-color: rgba(0,0,0,0.2);
     color: antiquewhite;
   }
+  .contact-me svg {
+    fill: #FFF;
+  }
 }
 * {
   margin: 0;
@@ -70,6 +73,11 @@ a.active {
 .category .card.horizontal .card-image img {
   border-radius: 50%;
   padding: 10px;
+  transition: .35s;
+}
+.category .card.horizontal .card-image a:hover img {
+  border-radius: 0;
+  transform: scale(1.5);
 }
 .category .card {
   max-height: 184px;
@@ -113,6 +121,25 @@ iframe {
 .card-action .btn {
   font-size: 14px;
   font-weight: normal;
+}
+.contact-me {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px auto;
+}
+.contact-me a:hover {
+  opacity: 0.8;
+}
+.contact-me svg {
+  height: 44px;
+}
+footer ul {
+  display: flex;
+  gap: 10px;
+}
+.footer-copyright a {
+  margin-left: 10px;
 }
 @media screen and (min-width: 768px) {
   iframe {

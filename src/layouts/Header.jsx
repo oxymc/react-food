@@ -9,6 +9,7 @@ const Header = () => {
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             <li><NavLink to="/about">About</NavLink></li>
             <li><NavLink to="/contacts">Contacts</NavLink></li>
+            <a className="grey-text text-lighten-4 right" target="_blank" rel="noreferrer" href="https://oxymc.github.io/react-food/">Github</a>
           </ul>
         </div>
       </nav>

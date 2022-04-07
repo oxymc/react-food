@@ -6,7 +6,9 @@ const MealCard = (props) => {
       <div className="col s12 m6">
         <div className="card horizontal">
           <div className="card-image">
-            <img className="responsive-img" src={strMealThumb} alt={strMeal} />
+            <Link to={`/meal/${idMeal}`}>
+              <img className="responsive-img" src={strMealThumb} alt={strMeal} />
+            </Link>
           </div>
           <div className="card-stacked">
             <div className="card-content">
