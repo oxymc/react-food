@@ -96,8 +96,7 @@ a.active {
   overflow: hidden;
 }
 .product .image img {
-  position: sticky;
-  top: 20px;
+  border-radius: 50%;
 }
 .product h1 {
   margin-top: 0;
@@ -140,6 +139,15 @@ footer ul {
 }
 .footer-copyright a {
   margin-left: 10px;
+}
+.footer-copyright > div {
+  margin: 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .product h1 {
+    margin-top: 10px;
+    font-size: 32px;
+  }
 }
 @media screen and (min-width: 768px) {
   iframe {

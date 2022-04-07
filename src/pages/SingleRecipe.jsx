@@ -27,7 +27,7 @@ const SingleRecipe = () => {
                 <img className="responsive-img" src={meal.strMealThumb} alt={meal.strMeal} />
               </div>
               <div className="col s12 m6 desc">
-                <h1 className='flow-text'>{meal.strMeal}</h1>
+                <h1>{meal.strMeal}</h1>
                 <h4 className='flow-text'>{meal.strTags ? meal.strTags : null}</h4>
                 <small>{meal.strArea}</small>
               </div>
