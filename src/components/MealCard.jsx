@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const MealCard = (props) => {
   const {idMeal, strMealThumb, strMeal} = props
     return (
-      <div className="col s12 m6">
+      <div className="col s12 m6 l4">
         <div className="card horizontal">
           <div className="card-image">
             <Link to={`/meal/${idMeal}`}>
