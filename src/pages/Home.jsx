@@ -30,7 +30,7 @@ const Home = () => {
         setCatalog(data.categories)
       }
     )
-  }, [])
+  }, [catalog])
 
   return (
     <div className="row">
