@@ -40,7 +40,7 @@ const Home = () => {
         <Catalog 
           catalog={
             queryParam ?
-            catalog.filter(category => (category.strCategory.toLowerCase().includes(queryParam))) : catalog
+            catalog.filter(category => (category.strCategory.toLowerCase().includes(queryParam.toLowerCase()))) : catalog
           } />}
     </div>
   );
