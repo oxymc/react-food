@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="col l6 s12">
             <h5 className="white-text"><NavLink to="/" className="grey-text text-lighten-4">Reciepes</NavLink></h5>
             <p className="grey-text text-lighten-4">
-              Project was based on React Routers and hooks
+              The project is built on routes and hooks
             </p>
           </div>
           <div className="col l4 offset-l2 s12">
@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="container row">
           <div className='col s12 center'>
             © {new Date().getFullYear()} OXYG
-            <a className="grey-text text-lighten-4" target="_blank" rel="noreferrer" href="https://oxymc.github.io/react-food/">My Github</a>
+            <a className="grey-text text-lighten-4" target="_blank" rel="noreferrer" href="https://github.com/oxymc/react-food">My Github</a>
           </div>
         </div>
       </div>
